@@ -50,7 +50,8 @@ A search result can contain previews that show where the search words are found 
 
 ```yaml
 # Example using cURL
-# rapydblok.com is scanned and results are emailed to admin[@]rapydblok.com
+# rapydblok.com is scanned and results are emailed to admin[@]rapydblok.com.
+# Replace 'ADDCUSTOMTOKEN' with custom token supplied by RapydBlok.
 curl --location --request POST 'https://api.rapydblok.com/subdomain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ADDCUSTOMTOKEN' \
