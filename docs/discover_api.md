@@ -31,11 +31,12 @@ A bearer access token is required from RapydBlok to access the DISCOVER API, oth
 ## Authentication
 
 API authentication requires a bearer access token and three data items. The following examples use cURL, Python and Postman.
-
+```yaml
 # Required Data Fields
 # Domain: Top-Level domains only.
 # EmailAddress: Enter email address. 'Note:' Email address should match the domain being scanned.
 # SendMail: true or false.
+```
 ```bash
 {
     "domain": "domainname.com",
@@ -45,10 +46,11 @@ API authentication requires a bearer access token and three data items. The foll
 ```
 
 ### Query Example using cURL
-
+```yaml
 # Example using cURL
 # rapydblok.com is scanned and results are emailed to admin[@]rapydblok.com.
 # Replace 'ADDCUSTOMTOKEN' with custom token supplied by RapydBlok.
+```
 ```bash
 curl --location --request POST 'https://api.rapydblok.com/subdomain' \
 --header 'Content-Type: application/json' \
@@ -66,6 +68,8 @@ curl --location --request POST 'https://api.rapydblok.com/subdomain' \
 # Example using Python
 # rapydblok.com is scanned and results are not emailed.
 # Replace 'ADDCUSTOMTOKEN' with custom token supplied by RapydBlok.
+```
+```bash
 import requests
 import json
 
@@ -96,7 +100,7 @@ print(response.text)
 2: In Postman, select the POST method.
 3: Enter the https://api.rapydblok.com/subdomain request URL.
 4: In Body insert the required data fields;
-```yaml
+```bash
 {
     "domain": "rapydblok.com",
     "emailAddress": "",
