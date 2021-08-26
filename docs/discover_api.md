@@ -30,7 +30,7 @@ A bearer access token is required from RapydBlok to access the DISCOVER API, oth
 
 ## Authentication
 
-API authentication requires a bearer access token and three data items.
+API authentication requires a bearer access token and a query, three data items to run a scan.
 ```yaml
 # Required Data Fields
 # Domain: Top-Level domains only.
