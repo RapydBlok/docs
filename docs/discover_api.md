@@ -22,13 +22,13 @@ nav_order: 2
 
 ## Authorization
 
-A bearer token is required from RapydBlok to access the DISCOVER API, otherwise you will receive the below error.
+A bearer token is required from RapydBlok to access the DISCOVER API, otherwise an error below, will be shown.
 
 ```yaml
 {"status":false,"message":"You are not authorized to access this method"}
 ```
 
-### Search granularity
+## Authentication
 
 Pages are split into sections that can be searched individually.
 The sections are defined by the headings on the page.
