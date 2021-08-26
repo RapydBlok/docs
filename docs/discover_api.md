@@ -4,7 +4,7 @@ title: Discover API
 nav_order: 2
 ---
 
-# Search
+# RapydBlok Discover API
 {: .no_toc }
 
 ## Table of contents
@@ -15,22 +15,17 @@ nav_order: 2
 
 ---
 
-Just the Docs uses [lunr.js](http://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates.
-All search results are shown in an auto-complete style interface (there is no search results page).
-By default, all generated HTML pages are indexed using the following data points:
+[RapydBlok DISCOVER](http://discover.rapydblok.com) has a commercial (paid) API that can gather SubDomain information. The following will document the DISCOVER API in detail.
 
-- Page title
-- Page content
-- Page URL
+- Request Access & Pricing: Email admin[@]rapydblok.com
+- RapydBlok Discover API URL: https://api.rapydblok.com/subdomain
 
-## Enable search in configuration
+## Authorization
 
-In your site's `_config.yml`, enable search:
+A bearer token is required from RapydBlok to access the DISCOVER API, otherwise you will receive the below error.
 
 ```yaml
-# Enable or disable the site search
-# Supports true (default) or false
-search_enabled: true
+{"status":false,"message":"You are not authorized to access this method"}
 ```
 
 ### Search granularity
