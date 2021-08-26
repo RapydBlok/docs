@@ -22,7 +22,7 @@ nav_order: 2
 - Request Access token & Pricing: Email admin[@]rapydblok.com
 - RapydBlok Discover API URL: https://api.rapydblok.com/subdomain
 
-A bearer access token is required from RapydBlok to access the DISCOVER API, otherwise an error below, will be shown.
+A bearer access token is required from RapydBlok to access the DISCOVER API, otherwise an error like the below, will be shown. Note: Access tokens have a finite lifetime and defined in commercial process.
 
 ```yaml
 {"status":false,"message":"You are not authorized to access this method"}
@@ -30,14 +30,15 @@ A bearer access token is required from RapydBlok to access the DISCOVER API, oth
 
 ## Authentication
 
-Pages are split into sections that can be searched individually.
-The sections are defined by the headings on the page.
-Each section is displayed in a separate search result.
+API authentication requires a bearer access token and three data items. The following examples us cURL, Python and Postman.
 
 ```yaml
-# Split pages into sections that can be searched individually
-# Supports 1 - 6, default: 2
-search.heading_level: 2
+# Required Data Fields
+{
+    "domain": "rapydblok.com",
+    "emailAddress": "",
+    "sendMail": False
+}
 ```
 
 ### Search previews
