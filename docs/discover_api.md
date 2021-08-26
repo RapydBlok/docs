@@ -30,10 +30,13 @@ A bearer access token is required from RapydBlok to access the DISCOVER API, oth
 
 ## Authentication
 
-API authentication requires a bearer access token and three data items. The following examples us cURL, Python and Postman.
+API authentication requires a bearer access token and three data items. The following examples use cURL, Python and Postman.
 
 ```yaml
 # Required Data Fields
+# Domain: Top-Level domains only.
+# EmailAddress: Enter email address. Note: Email address should match the domain being scanned.
+# SendMail: true or false.
 {
     "domain": "domainname.com",
     "emailAddress": "",
