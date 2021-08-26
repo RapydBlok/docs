@@ -35,7 +35,7 @@ API authentication requires a bearer access token and three data items. The foll
 ```yaml
 # Required Data Fields
 # Domain: Top-Level domains only.
-# EmailAddress: Enter email address. Note: Email address should match the domain being scanned.
+# EmailAddress: Enter email address. 'Note:' Email address should match the domain being scanned.
 # SendMail: true or false.
 {
     "domain": "domainname.com",
