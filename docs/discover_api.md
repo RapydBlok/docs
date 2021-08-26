@@ -20,7 +20,7 @@ nav_order: 2
 ## Authorization
 
 - Request Access token & Pricing: Email admin[@]rapydblok.com
-- RapydBlok Discover API URL: https://api.rapydblok.com/subdomain
+- Discover API Request URL: https://api.rapydblok.com/subdomain
 
 A bearer access token is required from RapydBlok to access the DISCOVER API, otherwise an error like the below, will be shown. Note: Access tokens have a finite lifetime and defined in commercial process.
 
