@@ -65,7 +65,7 @@ curl --location --request POST 'https://api.rapydblok.com/subdomain' \
 ```yaml
 # Example using Python
 # rapydblok.com is scanned and results are not emailed.
-#Replace 'ADDCUSTOMTOKEN' with custom token supplied by RapydBlok.
+# Replace 'ADDCUSTOMTOKEN' with custom token supplied by RapydBlok.
 import requests
 import json
 
@@ -91,47 +91,15 @@ print(response.text)
 ```yaml
 # Display the relative url in search results
 # Supports true (default) or false
-search.rel_url: false
+1: Download [Postman](https://www.getpostman.com/) for your environment.
+2: In Postman, select the POST method.
+3: Enter the https://api.rapydblok.com/subdomain request URL.
+4: In Body insert the required data fields;
+{
+    "domain": "rapydblok.com",
+    "emailAddress": "",
+    "sendMail": false
+}
+5: In Authorization section, select 'Bearer Token' and insert the token supplied by RapydBlok into the field.
+6: Click Send to run the query, the domain should start to scan and results returned.
 ```
-
-### Display search button
-
-The search button displays in the bottom right corner of the screen and triggers the search input when clicked.
-
-```yaml
-# Enable or disable the search button that appears in the bottom right corner of every page
-# Supports true or false (default)
-search.button: true
-```
-
-
-## Hiding pages from search
-
-Sometimes you might have a page that you don't want to be indexed for the search nor to show up in search results, e.g, a 404 page.
-To exclude a page from search, add the `search_exclude: true` parameter to the page's YAML front matter:
-
-#### Example
-{: .no_toc }
-
-```yaml
----
-layout: default
-title: Page not found
-nav_exclude: true
-search_exclude: true
----
-```
-
-
-## Generate search index when used as a gem
-
-If you use Just the Docs as a remote theme, you do not need the following steps.
-
-If you use the theme as a gem, you must initialize the search by running this `rake` command that comes with `just-the-docs`:
-
-```bash
-$ bundle exec just-the-docs rake search:init
-```
-
-This command creates the `assets/js/zzzz-search-data.json` file that Jekyll uses to create your search index.
-Alternatively, you can create the file manually with [this content]({{ site.github.repository_url }}/blob/master/assets/js/zzzz-search-data.json).
