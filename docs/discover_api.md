@@ -35,9 +35,9 @@ API authentication requires a bearer access token and three data items. The foll
 ```yaml
 # Required Data Fields
 {
-    "domain": "rapydblok.com",
+    "domain": "domainname.com",
     "emailAddress": "",
-    "sendMail": False
+    "sendMail": false
 }
 ```
 
@@ -46,17 +46,16 @@ API authentication requires a bearer access token and three data items. The foll
 A search result can contain previews that show where the search words are found in the specific section.
 
 ```yaml
-# Maximum amount of previews per search result
-# Default: 3
-search.previews: 3
-
-# Maximum amount of words to display before a matched word in the preview
-# Default: 5
-search.preview_words_before: 5
-
-# Maximum amount of words to display after a matched word in the preview
-# Default: 10
-search.preview_words_after: 10
+# Example using cURL
+# rapydblok.com is scanned and results are emailed to admin[@]rapydblok.com
+curl --location --request POST 'https://api.rapydblok.com/subdomain' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer ADDCUSTOMTOKEN' \
+--data-raw '{
+    "domain": "rapydblok.com",
+    "emailAddress": "admin@rapydblok.com",
+    "sendMail": true
+}'
 ```
 
 ### Search tokenizer
