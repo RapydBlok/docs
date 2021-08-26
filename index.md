@@ -10,7 +10,7 @@ permalink: /
 
 RapydBlok.com, is a SaaS, Cyber Security company that offers free SSL Auditing and SubDomain Discovery webapps, with commercial API's.
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/RapydBlok/rapydblok.github.io)
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/RapydBlok/rapydblok.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
