@@ -93,15 +93,18 @@ print(response.text)
 ```yaml
 # Display the relative url in search results
 # Supports true (default) or false
+```
 1: Download [Postman](https://www.getpostman.com/) for your environment.
 2: In Postman, select the POST method.
 3: Enter the https://api.rapydblok.com/subdomain request URL.
 4: In Body insert the required data fields;
+```yaml
 {
     "domain": "rapydblok.com",
     "emailAddress": "",
     "sendMail": false
 }
+```
 5: In Authorization section, select 'Bearer Token' and insert the token supplied by RapydBlok into the field.
 6: Click Send to run the query, the domain should start to scan and results returned.
-```
+
