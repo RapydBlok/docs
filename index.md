@@ -9,7 +9,7 @@ permalink: /
 # RapydBlok.com Official Documentation Repository
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+RapydBlok.com, is a SaaS, Cyber Security company that offers free SSL Auditing and SubDomain Discovery webapps, wtih commercial API's.
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/RapydBlok/rapydblok.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
@@ -18,7 +18,10 @@ Just the Docs gives your documentation a jumpstart with a responsive Jekyll them
 
 ## Getting started
 
-### Dependencies
+### API
+RapydBlok.com offers a free webapp for SSL Auditing called [RapdyBlok INSPECT](https://inspect.rapydblok.com) and a free webapp for SubDomain Discovery called [RapdyBlok DISCOVER](https://discover.rapydblok.com).
+
+Both the <b>INSPECT</b> and <b>DISCOVER</b> webapps offer commercial API's.
 
 Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
 
