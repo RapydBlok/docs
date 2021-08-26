@@ -46,7 +46,7 @@ API authentication requires a bearer access token and a query, three data items 
 ```
 The following examples use cURL, Python and Postman.
 
-### Query Example using cURL
+### Example Query using cURL
 ```yaml
 # Example using cURL
 # rapydblok.com is scanned and results are emailed to admin[@]rapydblok.com.
@@ -63,7 +63,7 @@ curl --location --request POST 'https://api.rapydblok.com/subdomain' \
 }'
 ```
 
-### Query Example using Python
+### Example Query using Python
 
 ```yaml
 # Example using Python
@@ -91,7 +91,7 @@ response = requests.request("POST", url, headers=headers, data=payload)
 print(response.text)
 ```
 
-### Query Example using Postman App
+### Example Query using Postman App
 
 ```yaml
 1: Download [Postman](https://www.getpostman.com/) for your environment.
