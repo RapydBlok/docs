@@ -94,9 +94,6 @@ print(response.text)
 ### Query Example using Postman App
 
 ```yaml
-# Display the relative url in search results
-# Supports true (default) or false
-
 1: Download [Postman](https://www.getpostman.com/) for your environment.
 2: In Postman, select the POST method.
 3: Enter the https://api.rapydblok.com/subdomain request URL.
