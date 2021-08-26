@@ -44,9 +44,7 @@ API authentication requires a bearer access token and three data items. The foll
 }
 ```
 
-### Search previews
-
-A search result can contain previews that show where the search words are found in the specific section.
+### Query Example using cURL
 
 ```yaml
 # Example using cURL
@@ -62,20 +60,33 @@ curl --location --request POST 'https://api.rapydblok.com/subdomain' \
 }'
 ```
 
-### Search tokenizer
-
-The default is for hyphens to separate tokens in search terms:
-`gem-based` is equivalent to `gem based`, matching either word.
-To allow search for hyphenated words:
+### Query Example using Python
 
 ```yaml
-# Set the search token separator
-# Default: /[\s\-/]+/
-# Example: enable support for hyphenated search words
-search.tokenizer_separator: /[\s/]+/
+# Example using Python
+# rapydblok.com is scanned and results are not emailed.
+#Replace 'ADDCUSTOMTOKEN' with custom token supplied by RapydBlok.
+import requests
+import json
+
+url = "https://api.rapydblok.com/subdomain"
+
+payload = json.dumps({
+  "domain": "rapydblok.com",
+  "emailAddress": "",
+  "sendMail": False
+})
+headers = {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer ADDCUSTOMTOKEN',
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
 ```
 
-### Display URL in search results 
+### Query Example using Postman App
 
 ```yaml
 # Display the relative url in search results
