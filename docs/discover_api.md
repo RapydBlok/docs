@@ -46,10 +46,10 @@ API authentication requires a bearer access token and three data items. The foll
 
 ### Query Example using cURL
 
-```yaml
 # Example using cURL
 # rapydblok.com is scanned and results are emailed to admin[@]rapydblok.com.
 # Replace 'ADDCUSTOMTOKEN' with custom token supplied by RapydBlok.
+```bash
 curl --location --request POST 'https://api.rapydblok.com/subdomain' \
 --header 'Content-Type: application/json' \
 --header 'Authorization: Bearer ADDCUSTOMTOKEN' \
