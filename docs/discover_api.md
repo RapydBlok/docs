@@ -94,8 +94,8 @@ print(response.text)
 ### Example Query using Postman App
 
 1: Download [Postman](https://www.getpostman.com/) for your environment.<br>
-2: In Postman, select the POST method.<br>
-3: Enter the https://api.rapydblok.com/subdomain request URL.<br>
+2: In Postman, select the ``` POST ``` method.<br>
+3: Enter the ``` https://api.rapydblok.com/subdomain ``` request URL.<br>
 4: In Body insert the required data fields;<br>
 ```bash
 {
