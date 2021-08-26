@@ -105,5 +105,5 @@ print(response.text)
 }
 ```
 
-5: In Authorization section, select ```bash Bearer Token ``` and insert the token supplied by RapydBlok into the field.<br>
+5: In Authorization section, select ``` Bearer Token ``` and insert the token supplied by RapydBlok into the field.<br>
 6: Click Send to run the query, the domain should start to scan and results returned.<br>
