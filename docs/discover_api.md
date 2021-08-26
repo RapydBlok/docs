@@ -32,12 +32,10 @@ A bearer access token is required from RapydBlok to access the DISCOVER API, oth
 
 API authentication requires a bearer access token and three data items. The following examples use cURL, Python and Postman.
 
-```yaml
 # Required Data Fields
 # Domain: Top-Level domains only.
 # EmailAddress: Enter email address. 'Note:' Email address should match the domain being scanned.
 # SendMail: true or false.
-```
 ```bash
 {
     "domain": "domainname.com",
