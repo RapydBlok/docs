@@ -17,12 +17,12 @@ nav_order: 2
 
 [RapydBlok DISCOVER](http://discover.rapydblok.com) has a commercial (paid) API that can gather SubDomain information. The following will document the DISCOVER API in detail.
 
-- Request Access & Pricing: Email admin[@]rapydblok.com
-- RapydBlok Discover API URL: https://api.rapydblok.com/subdomain
-
 ## Authorization
 
-A bearer token is required from RapydBlok to access the DISCOVER API, otherwise an error below, will be shown.
+- Request Access token & Pricing: Email admin[@]rapydblok.com
+- RapydBlok Discover API URL: https://api.rapydblok.com/subdomain
+
+A bearer access token is required from RapydBlok to access the DISCOVER API, otherwise an error below, will be shown.
 
 ```yaml
 {"status":false,"message":"You are not authorized to access this method"}
