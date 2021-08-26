@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Search
-nav_order: 3
+title: Discover API
+nav_order: 2
 ---
 
 # Search
