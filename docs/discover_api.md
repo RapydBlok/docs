@@ -37,6 +37,8 @@ API authentication requires a bearer access token and three data items. The foll
 # Domain: Top-Level domains only.
 # EmailAddress: Enter email address. 'Note:' Email address should match the domain being scanned.
 # SendMail: true or false.
+```
+```bash
 {
     "domain": "domainname.com",
     "emailAddress": "",
