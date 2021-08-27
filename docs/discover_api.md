@@ -97,7 +97,7 @@ Data Field Validation ```400 Bad Request``` Error when Email address don't match
 - Re-Scans of domains are limited to 1 every 12 hours.
 - Blacklist exists for domains that cannot be scanned incl. *.mil etc
 
-Reponse Error to Blacklisted domain: ```400 Bad Request``` with ``` "message": "Your requested domain has been marked as black listed" ```
+Reponse Error to Blacklisted domain: ```400 Bad Request``` with ```yaml "message": "Your requested domain has been marked as black listed" ```
 
 ## Examples using cURL, Python and Postman
 
