@@ -19,4 +19,4 @@ RapydBlok.com offers a free webapp for SSL Auditing called [RapdyBlok INSPECT](h
 ### API
 Both the <b>INSPECT</b> and <b>DISCOVER</b> webapps offer commercial API's which require authorization to access.
 
-- DISCOVER API Docs: http://docs.rapydblok.com/docs/discover_api
+- DISCOVER API Docs: [http://docs.rapydblok.com/docs/discover_api](http://docs.rapydblok.com/docs/discover_api)
