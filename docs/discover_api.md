@@ -168,7 +168,7 @@ print(response.text)
 
 ## Results
 
-Query results shoud return the following data in standard formats;
+Query results should return the following data in standard formats;
 ```yaml
 # status: true or false.
 # message: null or error.
