@@ -49,7 +49,7 @@ API authentication requires a bearer access token and three data items to run a 
 
 Domain input is validated, so only Top-Level domains are accepted.
 ```yaml
-# Domain: Top-Level domains only. 
+# Domain: Top-Level domains only. e.g 'rapydblok.com'
 # Domain: Don't insert a subdomain e.g. 'www' or 'https://'
 ```
 Data Field Validation Error examples;
@@ -69,6 +69,19 @@ Data Field Validation Error examples;
 {
     "status": false,
     "message": "Remove www. from the top level domain",
+    "domain": null,
+    "lastScanTime": null,
+    "activeSubDomains": null,
+    "allSortedSubDomains": null,
+    "activeSubDomainCount": null,
+    "allSortedSubDomainCount": null
+}
+```
+Data Field Validation Error when Email address don't match the domain being scanned;
+```bash
+{
+    "status": false,
+    "message": "Invalid email address. Email should match the domain being scanned.",
     "domain": null,
     "lastScanTime": null,
     "activeSubDomains": null,
