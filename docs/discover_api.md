@@ -52,7 +52,7 @@ Domain input is validated, so only Top-Level domains are accepted.
 # Domain: Top-Level domains only. e.g 'rapydblok.com'
 # Domain: Don't insert a subdomain e.g. 'www' or 'https://'
 ```
-Data Field Validation Error examples;
+Data Field Validation ```400 Bad Request``` Error examples;
 ```bash
 {
     "status": false,
@@ -77,7 +77,7 @@ Data Field Validation Error examples;
     "allSortedSubDomainCount": null
 }
 ```
-Data Field Validation Error when Email address don't match the domain being scanned;
+Data Field Validation ```400 Bad Request``` Error when Email address don't match the domain being scanned;
 ```bash
 {
     "status": false,
