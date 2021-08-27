@@ -171,6 +171,11 @@ Query results shoud return the following data in standard formats.
 # activeSubDomainCount: count of Active subdomains.
 # allSortedSubDomainCount: count of All subdomains.
 ```
+Query Responses;
+- ```200 OK ```
+- ```400 Bad Request ```
+- ```500 Internal Server Error ```
+
 Example of rapydblok.com results
 ```bash
 {
