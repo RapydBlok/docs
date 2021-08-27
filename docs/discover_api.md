@@ -94,7 +94,7 @@ Data Field Validation ```400 Bad Request``` Error when Email address don't match
 }
 ```
 
-### The following examples use cURL, Python and Postman.
+## Examples using cURL, Python and Postman.
 
 ### Example Query using cURL
 ```yaml
