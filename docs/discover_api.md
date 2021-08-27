@@ -37,6 +37,7 @@ API authentication requires a bearer access token and three data items to run a 
 # EmailAddress: Enter email address. 'Note:' Email address should match the domain being scanned.
 # SendMail: true or false.
 ```
+Example of Required Data Fields
 ```bash
 {
     "domain": "domainname.com",
@@ -44,6 +45,8 @@ API authentication requires a bearer access token and three data items to run a 
     "sendMail": false
 }
 ```
+Incorrect Bearer Access Token Error: ``` 500 Internal Server Error ```
+
 
 ## Data Field Validation
 
@@ -91,7 +94,7 @@ Data Field Validation ```400 Bad Request``` Error when Email address don't match
 }
 ```
 
-The following examples use cURL, Python and Postman.
+### The following examples use cURL, Python and Postman.
 
 ### Example Query using cURL
 ```yaml
