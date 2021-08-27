@@ -12,9 +12,11 @@ RapydBlok.com, is a SaaS, Cyber Security company that offers free SSL Auditing a
 
 ---
 
-## Getting started
+## About
 
 RapydBlok.com offers a free webapp for SSL Auditing called [RapdyBlok INSPECT](https://inspect.rapydblok.com) and a free webapp for SubDomain Discovery called [RapdyBlok DISCOVER](https://discover.rapydblok.com).
 
 ### API
 Both the <b>INSPECT</b> and <b>DISCOVER</b> webapps offer commercial API's which require authorization to access.
+
+- DISCOVER API Docs: http://docs.rapydblok.com/docs/discover_api
