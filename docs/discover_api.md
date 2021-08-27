@@ -160,7 +160,7 @@ print(response.text)
 
 ## Results
 
-Query results shoud return the following data in standard formats.
+Query results shoud return the following data in standard formats;
 ```yaml
 # status: true or false.
 # message: null or error.
@@ -176,7 +176,7 @@ Query Responses;
 - ```400 Bad Request ```
 - ```500 Internal Server Error ```
 
-Example of rapydblok.com results
+Example of rapydblok.com results;
 ```bash
 {
     "status": true,
