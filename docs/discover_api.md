@@ -19,7 +19,7 @@ nav_order: 2
 
 ## Authorization
 
-- Request Access token & Pricing: Email admin[@]rapydblok.com
+- Request Access token & Pricing: Email ``` admin[@]rapydblok.com ```
 - Discover API Request URL: ``` https://api.rapydblok.com/subdomain ```
 
 A bearer access token is required from RapydBlok to access the DISCOVER API, otherwise an error like the below, will be shown. Note: Access tokens have a finite lifetime and defined in commercial process.
@@ -30,7 +30,7 @@ A bearer access token is required from RapydBlok to access the DISCOVER API, oth
 
 ## Authentication
 
-API authentication requires a bearer access token and a query, three data items to run a scan.
+API authentication requires a bearer access token and three data items to run a scan.
 ```yaml
 # Required Data Fields
 # Domain: Top-Level domains only.
@@ -44,6 +44,40 @@ API authentication requires a bearer access token and a query, three data items 
     "sendMail": false
 }
 ```
+
+## Data Field Validation
+
+Domain input is validated, so only Top-Level domains are accepted.
+```yaml
+# Domain: Top-Level domains only. 
+# Domain: Don't insert a subdomain e.g. 'www' or 'https://'
+```
+Data Field Validation Error examples;
+```bash
+{
+    "status": false,
+    "message": "Remove https:// from the top level domain",
+    "domain": null,
+    "lastScanTime": null,
+    "activeSubDomains": null,
+    "allSortedSubDomains": null,
+    "activeSubDomainCount": null,
+    "allSortedSubDomainCount": null
+}
+```
+```bash
+{
+    "status": false,
+    "message": "Remove www. from the top level domain",
+    "domain": null,
+    "lastScanTime": null,
+    "activeSubDomains": null,
+    "allSortedSubDomains": null,
+    "activeSubDomainCount": null,
+    "allSortedSubDomainCount": null
+}
+```
+
 The following examples use cURL, Python and Postman.
 
 ### Example Query using cURL
