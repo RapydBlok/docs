@@ -176,7 +176,7 @@ Query Responses;
 - ```400 Bad Request ```
 - ```500 Internal Server Error ```
 
-Example of rapydblok.com results in JSON;
+### Example of rapydblok.com results in JSON;
 ```bash
 {
     "status": true,
