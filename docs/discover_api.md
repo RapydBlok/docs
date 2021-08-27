@@ -94,7 +94,7 @@ Data Field Validation ```400 Bad Request``` Error when Email address don't match
 }
 ```
 
-## Examples using cURL, Python and Postman.
+## Examples using cURL, Python and Postman
 
 ### Example Query using cURL
 ```yaml
@@ -176,7 +176,7 @@ Query Responses;
 - ```400 Bad Request ```
 - ```500 Internal Server Error ```
 
-### Example of rapydblok.com results in JSON;
+### Example of rapydblok.com results in JSON
 ```bash
 {
     "status": true,
