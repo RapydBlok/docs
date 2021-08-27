@@ -157,3 +157,92 @@ print(response.text)
 
 5: In Authorization section, select ``` Bearer Token ``` and insert the token supplied by RapydBlok into the field.<br>
 6: Click Send to run the query, the domain should start to scan and results returned.<br>
+
+## Results
+
+Query results shoud return the following data in standard formats.
+```yaml
+# status: true or false.
+# message: null or error.
+# domain: name of the top-level domain scanned.
+# lastScanTime: timestamp of scan.
+# activeSubDomains: list of Active subdomains.
+# allSortedSubDomains: list of All subdomains.
+# activeSubDomainCount: count of Active subdomains.
+# allSortedSubDomainCount: count of All subdomains.
+```
+Example of rapydblok.com results
+```bash
+{
+    "status": true,
+    "message": null,
+    "domain": "rapydblok.com",
+    "lastScanTime": "2021-08-27 14:40:54",
+    "activeSubDomains": [
+        {
+            "subDomain": "https://api.rapydblok.com",
+            "code": "302"
+        },
+        {
+            "subDomain": "https://cpanel.rapydblok.com",
+            "code": "200"
+        },
+        {
+            "subDomain": "https://cpcalendars.rapydblok.com",
+            "code": "301"
+        },
+        {
+            "subDomain": "https://cpcontacts.rapydblok.com",
+            "code": "301"
+        },
+        {
+            "subDomain": "https://discover.rapydblok.com",
+            "code": "200"
+        },
+        {
+            "subDomain": "https://docs.rapydblok.com",
+            "code": "200"
+        },
+        {
+            "subDomain": "https://inspect.rapydblok.com",
+            "code": "200"
+        },
+        {
+            "subDomain": "https://mail.rapydblok.com",
+            "code": "301"
+        },
+        {
+            "subDomain": "https://rapydblok.com",
+            "code": "301"
+        },
+        {
+            "subDomain": "https://webdisk.rapydblok.com",
+            "code": "401"
+        },
+        {
+            "subDomain": "https://webmail.rapydblok.com",
+            "code": "200"
+        },
+        {
+            "subDomain": "https://www.rapydblok.com",
+            "code": "200"
+        }
+    ],
+    "allSortedSubDomains": [
+        "api.rapydblok.com",
+        "cpanel.rapydblok.com",
+        "cpcalendars.rapydblok.com",
+        "cpcontacts.rapydblok.com",
+        "discover.rapydblok.com",
+        "docs.rapydblok.com",
+        "inspect.rapydblok.com",
+        "mail.rapydblok.com",
+        "rapydblok.com",
+        "webdisk.rapydblok.com",
+        "webmail.rapydblok.com",
+        "www.rapydblok.com"
+    ],
+    "activeSubDomainCount": 12,
+    "allSortedSubDomainCount": 12
+}
+```
