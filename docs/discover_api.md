@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DISCOVER API
+title: Discover API
 nav_order: 2
 ---
 
