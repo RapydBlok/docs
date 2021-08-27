@@ -47,6 +47,9 @@ Example of Required Data Fields
 ```
 Incorrect Bearer Access Token Error: ``` 500 Internal Server Error ```
 
+## Limits
+- Re-Scans of domains are limited to 1 every 12 hours.
+- Blacklist exists for domains that cannot be scanned incl. *.mil etc
 
 ## Data Field Validation
 
