@@ -47,10 +47,6 @@ Example of Required Data Fields
 ```
 Incorrect Bearer Access Token Error: ``` 500 Internal Server Error ```
 
-## Limits
-- Re-Scans of domains are limited to 1 every 12 hours.
-- Blacklist exists for domains that cannot be scanned incl. *.mil etc
-
 ## Data Field Validation
 
 Domain input is validated, so only Top-Level domains are accepted.
@@ -96,6 +92,10 @@ Data Field Validation ```400 Bad Request``` Error when Email address don't match
     "allSortedSubDomainCount": null
 }
 ```
+
+## Limits
+- Re-Scans of domains are limited to 1 every 12 hours.
+- Blacklist exists for domains that cannot be scanned incl. *.mil etc
 
 ## Examples using cURL, Python and Postman
 
