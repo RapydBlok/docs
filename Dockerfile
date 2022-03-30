@@ -7,8 +7,8 @@ ENV LANGUAGE en_US.UTF-8
 WORKDIR /usr/src/app
 
 COPY Gemfile just-the-docs.gemspec ./
-RUN gem install bundler -v '~>2.1.4'
-RUN bundle _2.1.4 install
+RUN bundle update
+RUN gem install bundler && bundle install
 
 EXPOSE 4000
 
