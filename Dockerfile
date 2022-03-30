@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 COPY Gemfile just-the-docs.gemspec ./
 RUN bundle update
-RUN gem install bundler && bundle install
+RUN gem install bundler:2.1.4 && bundle install
 
 EXPOSE 4000
 
