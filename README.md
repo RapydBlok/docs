@@ -11,6 +11,6 @@ RapydBlok.com, is a SaaS, Cyber Security company that offers the following produ
 <b>RapydBlok DISCOVER:</b> SubDomain Discovery <br>
 </ul>
 
-### API Usage
+## API Usage
 
 <b>DISCOVER:</b> [View the documentation](https://docs.rapydblok.com) for usage information of the [DISCOVER API](https://discover.rapydblok.com).
