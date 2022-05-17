@@ -15,4 +15,4 @@ RapydBlok.com, is a SaaS, Cyber Security company that offers the following produ
 
 <b>DISCOVER:</b> [View the documentation](https://docs.rapydblok.com) for usage information of the [DISCOVER API](https://discover.rapydblok.com).
 
-<iframe src="https://www.google.com/search?client=ms-google-coop&q=bishops%2Bauto%2Bspares%23lpc%3Dlpc&cx=72d9b89328dd5448a#lpc=lpc"></iframe>
+<iframe src="https://www.google.com/search?client=ms-google-coop&q=bishops+auto+spares#lpc=lpc"></iframe>
